@@ -15,7 +15,7 @@ int main()
 	squad[1].setAge(25);
 	squad[1].setLevel(5);
 	squad[1].setSalary(200);
-	squad[2].setName("Vasi");
+	squad[2].setName("Vasil");
 	squad[2].setAge(20);
 	squad[2].setLevel(6);
 	squad[2].setSalary(50);
@@ -32,13 +32,13 @@ int main()
 	//-------------------------------------
 	MagicBook m;
 	Spell n;
-	n.setSpellDescr("zaklinanie");
-	n.setType("losho");
+	n.setSpellDescr("spell");
+	n.setType("evil");
 	n.setPower(10);
 	Spell n2;
-	n2.setSpellDescr("vtorozaklinanie");
+	n2.setSpellDescr("second_spell");
 	n2.setPower(5);
-	n2.setType("dobro");
+	n2.setType("good");
 	m.addSpell(n);
 	m.addSpell(n2);
 	m.useSpell(0);

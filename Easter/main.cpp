@@ -7,26 +7,26 @@ int main()
 {
 	Bucket bucket0, bucket1, bucket2;
 	Egg newEgg, second, third;
-	newEgg.setEggName("novoto");
+	newEgg.setEggName("new");
 	newEgg.setEggSize(5);
-	second.setEggName("vtoro");
+	second.setEggName("second");
 	second.setEggSize(10);
-	third.setEggName("treto");
+	third.setEggName("third");
 	third.setEggSize(2);
 	bucket1.addEgg(newEgg);
 	bucket1.addEgg(second);
 	bucket1.addEgg(third);
-	bucket1.setOwnerName("vtora");
+	bucket1.setOwnerName("second_bucket");
 	bucket0.addEgg(newEgg);
-	bucket0.setOwnerName("purva");
+	bucket0.setOwnerName("first_bucket");
 	bucket2.addEgg(third);
 	bucket2.addEgg(second);
-	bucket2.setOwnerName("treta");
+	bucket2.setOwnerName("third_bucket");
 	for (int i = 0; i < 3; i++)
 		std::cout << "Egg name: " << bucket1.getEggByIndex(i).getEggName() << " size: " << bucket1.getEggByIndex(i).getEggSize() << std::endl;
 	std::cout << "-----------------------------------------" << std::endl;
 	char* name = new char[7];
-	strcpy(name, "vtoro");
+	strcpy(name, "second");
 	bucket1.removeEgg(name);
 	for (int i = 0; i < 2; i++)
 		std::cout << "Egg name: " << bucket1.getEggByIndex(i).getEggName() << " size: " << bucket1.getEggByIndex(i).getEggSize() << std::endl;
@@ -39,9 +39,9 @@ int main()
 	int cnt = 0;
 	Bucket one, two, three;
 	one = bucket0 + bucket1;
-	/*one.deserializeBucket("purva");
-	two.deserializeBucket("vtora");
-	three.deserializeBucket("treta");
+	/*one.deserializeBucket("first");
+	two.deserializeBucket("second");
+	three.deserializeBucket("third");
 	one.report();
 	two.report();
 	three.report();*/
